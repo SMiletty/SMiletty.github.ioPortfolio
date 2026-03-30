@@ -31,7 +31,23 @@
             display: block;
         }
 
-	
+        .cta-button {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 0.75rem 1.25rem;
+            border-radius: 10px;
+            background: rgba(84, 146, 255, 0.9);
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background 0.25s ease, transform 0.25s ease;
+        }
+
+        .cta-button:hover {
+            background: rgba(113, 171, 255, 0.95);
+            transform: translateY(-2px);
+        }
+
 </style>
 <body>
     <nav class="navbar">
@@ -59,14 +75,14 @@
             </div>
 
             <div class="bio-content">
-                <h2>Welcome</h2>
+                <h2>Welcome</h2><BR>
 				<p> My Name is Shauna.</p>
-                <p>
+               <br> <p>
                     I am a passionate web developer and designer with expertise in creating responsive, 
                     user-friendly websites and applications. With a strong foundation in both frontend and 
                     backend technologies, I plan to help businesses and individuals establish their digital presence 
                     through modern, intuitive web solutions.
-                </p>
+                </p><br>
                 <p>
                     My approach focuses on combining elegant design with clean, efficient code to deliver 
                     projects that not only look great but perform exceptionally. I'm committed to staying 
@@ -78,7 +94,7 @@
                      websites to dynamic web applications. Each project has strengthened my problem-solving skills and deepened my understanding of what it 
                     takes to create truly exceptional digital experiences.
                 </p>
-				<a href="cases.html">Take a look at what I have been working on.</a>
+				<a href="cases.html" class="cta-button">Take a look at what I have been working on.</a>
 
                 </div>
             </div>

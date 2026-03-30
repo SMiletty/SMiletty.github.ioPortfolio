@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .about-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+            margin-bottom: 3rem;
+        }
+
+        .headshot-container {
+            display: flex;
+            justify-content: center;
+        }
+
+        .headshot {
+            width: 280px;
+            height: 280px;
+            border-radius: 20px;
+            overflow: hidden;
+            border: 3px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 14px 30px rgba(0, 0, 0, 0.3);
+            object-fit: cover;
+            display: block;
+        }
+
+        .bio-content h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            color: #e9f2ff;
+        }
+
+        .bio-content p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #d6e0ff;
+            margin-bottom: 1.5rem;
+            text-align: justify;
+        }
+
+        .education-section {
+            margin-top: 3rem;
+            padding: 2rem;
+            border-radius: 18px;
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+        }
+
+        .education-section h3 {
+            font-size: 1.6rem;
+            margin-bottom: 1.5rem;
+            color: #bbd7ff;
+        }
+
+        .education-item {
+            margin-bottom: 1.5rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .education-item:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+
+        .education-item h4 {
+            font-size: 1.2rem;
+            color: #e9f2ff;
+            margin-bottom: 0.3rem;
+        }
+
+        .education-item .school {
+            color: #bbd7ff;
+            font-weight: 600;
+            margin-bottom: 0.3rem;
+        }
+
+        .education-item .year {
+            color: #88a6ce;
+            font-size: 0.95rem;
+        }
+
+        .education-item p {
+            margin-top: 0.5rem;
+            color: #d6e0ff;
+            font-size: 1rem;
+        }
+
+        .skills-section {
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.15);
+        }
+
+        .skills-section h4 {
+            font-size: 1.2rem;
+            color: #bbd7ff;
+            margin-bottom: 1rem;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 1rem;
+        }
+
+        .skill-tag {
+            background: rgba(84, 146, 255, 0.15);
+            border: 1px solid rgba(84, 146, 255, 0.4);
+            color: #bbd7ff;
+            padding: 0.6rem 1rem;
+            border-radius: 10px;
+            text-align: center;
+            font-weight: 600;
+            font-size: 0.95rem;
+        }
+
+        @media (max-width: 900px) {
+            .about-section {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .bio-content h2 {
+                font-size: 2rem;
+            }
+
+            .bio-content p {
+                text-align: left;
+            }
+
+            .headshot {
+                width: 240px;
+                height: 240px;
+            }
+        }
+
+        @media (max-width: 680px) {
+            .headshot {
+                width: 200px;
+                height: 200px;
+            }
+
+            .bio-content h2 {
+                font-size: 1.6rem;
+            }
+
+            .about-section {
+                gap: 1.5rem;
+            }
+
+            .education-section {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <h1 class="logo">Portfolio</h1>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cases.html">Cases</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <h2>About Me</h2>
+        <p>My background, experience, and expertise</p>
+    </section>
+
+    <main class="container">
+        <div class="about-section">
+            <div class="headshot-container">
+                <img src="/image/cam.jpg" alt="Professional headshot" class="headshot">
+            </div>
+
+            <div class="bio-content">
+                <h2>Welcome</h2>
+                <p>
+                    I am a passionate web developer and designer with expertise in creating responsive, 
+                    user-friendly websites and applications. With a strong foundation in both frontend and 
+                    backend technologies, I help businesses and individuals establish their digital presence 
+                    through modern, intuitive web solutions.
+                </p>
+                <p>
+                    My approach focuses on combining elegant design with clean, efficient code to deliver 
+                    projects that not only look great but perform exceptionally. I'm committed to staying 
+                    current with industry standards and best practices, ensuring that every project is built 
+                    on the latest technologies and methodologies.
+                </p>
+                <p>
+                    Over the years, I've had the opportunity to work on diverse projects ranging from 
+                    corporate websites and e-commerce platforms to dynamic web applications. Each project 
+                    has strengthened my problem-solving skills and deepened my understanding of what it 
+                    takes to create truly exceptional digital experiences.
+                </p>
+            </div>
+        </div>
+
+        <div class="education-section">
+            <h3>Education & Experience</h3>
+
+            <div class="education-item">
+                <h4>Professional Experience</h4>
+                <div class="school">Freelance Web Developer</div>
+                <div class="year">2022 - Present</div>
+                <p>
+                    Developed and deployed multiple responsive websites and web applications for clients 
+                    across various industries. Specialized in responsive design, UI/UX optimization, and 
+                    full-stack development.
+                </p>
+            </div>
+
+            <div class="education-item">
+                <h4>Bachelor of Science in Computer Science</h4>
+                <div class="school">University of Technology</div>
+                <div class="year">Graduated 2022</div>
+                <p>
+                    Completed comprehensive coursework in software development, web technologies, database 
+                    management, and computer networks. Developed strong foundation in programming principles 
+                    and software architecture.
+                </p>
+            </div>
+
+            <div class="education-item">
+                <h4>Web Development Certification</h4>
+                <div class="school">Professional Development Institute</div>
+                <div class="year">Completed 2021</div>
+                <p>
+                    Advanced certification covering modern web development frameworks, responsive design, 
+                    and full-stack JavaScript development. Hands-on training in industry-standard tools 
+                    and methodologies.
+                </p>
+            </div>
+
+            <div class="skills-section">
+                <h4>Core Skills</h4>
+                <div class="skills-grid">
+                    <div class="skill-tag">HTML5</div>
+                    <div class="skill-tag">CSS3</div>
+                    <div class="skill-tag">JavaScript</div>
+                    <div class="skill-tag">React</div>
+                    <div class="skill-tag">UI/UX Design</div>
+                    <div class="skill-tag">Responsive Design</div>
+                    <div class="skill-tag">Web Development</div>
+                    <div class="skill-tag">Git</div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 My Portfolio. All rights reserved.</p>
+    </footer>
+</body>
+</html>

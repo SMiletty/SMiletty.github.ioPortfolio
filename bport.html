@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Bird Monthly</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .project-hero {
+            background: linear-gradient(130deg, rgba(4, 17, 39, 0.8), rgba(2, 12, 27, 0.9)), 
+                        url('/image/Bird Monthly Presentation.png') center/cover;
+            background-attachment: fixed;
+            min-height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #fff;
+            margin-bottom: 3rem;
+        }
+
+        .project-hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: #e9f2ff;
+        }
+
+        .project-hero p {
+            font-size: 1.3rem;
+            color: #bbd7ff;
+        }
+
+        .project-showcase {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            align-items: center;
+            margin-bottom: 3rem;
+        }
+
+        .showcase-image {
+            border-radius: 18px;
+            overflow: hidden;
+            box-shadow: 0 14px 30px rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .showcase-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .showcase-content h2 {
+            font-size: 2.2rem;
+            color: #e9f2ff;
+            margin-bottom: 1.5rem;
+        }
+
+        .showcase-content p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #d6e0ff;
+            margin-bottom: 1.5rem;
+            text-align: justify;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            margin-top: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .cta-btn {
+            display: inline-block;
+            padding: 0.75rem 1.75rem;
+            text-decoration: none;
+            font-weight: 600;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+            font-size: 1rem;
+        }
+
+        .btn-primary {
+            background: rgba(84, 146, 255, 0.9);
+            color: #ffffff;
+            border: 2px solid rgba(84, 146, 255, 0.9);
+        }
+
+        .btn-primary:hover {
+            background: rgba(113, 171, 255, 1);
+            border-color: rgba(113, 171, 255, 1);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(84, 146, 255, 0.3);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: #bbd7ff;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: rgba(255, 255, 255, 0.5);
+            transform: translateY(-2px);
+        }
+
+        @media (max-width: 900px) {
+            .project-showcase {
+                grid-template-columns: 1fr;
+            }
+
+            .project-hero h1 {
+                font-size: 2.2rem;
+            }
+
+            .showcase-content h2 {
+                font-size: 1.8rem;
+            }
+        }
+
+        @media (max-width: 680px) {
+            .project-hero {
+                min-height: 280px;
+                margin-bottom: 2rem;
+            }
+
+            .project-hero h1 {
+                font-size: 1.6rem;
+            }
+
+            .showcase-content h2 {
+                font-size: 1.4rem;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+            }
+
+            .cta-btn {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <h1 class="logo">Portfolio</h1>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cases.html">Cases</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="project-hero">
+        <div>
+            <h1>Bird Monthly</h1>
+            <p>A Beautiful Birdwatching & Travel Blog</p>
+        </div>
+    </section>
+
+    <main class="container">
+        <div class="project-showcase">
+            <div class="showcase-image">
+                <img src="/image/Bird Monthly Presentation.png" alt="Bird Monthly Project">
+            </div>
+            <div class="showcase-content">
+                <h2>Project Overview</h2>
+                <p>
+                    Bird Monthly is a responsive birdwatching and travel blog designed with modern web standards 
+                    and beautiful UI/UX. The website features a clean, intuitive interface that showcases articles, 
+                    locations, and tips for bird enthusiasts.
+                </p>
+                <p>
+                    Built with responsive design principles, the site provides an excellent user experience across 
+                    all devices. The glassmorphism design aesthetic creates a modern, visually appealing platform 
+                    that engages visitors and encourages exploration.
+                </p>
+                <p>
+                    <strong>Key Features:</strong><br>
+                    • Responsive article grid layout<br>
+                    • Beautiful image galleries<br>
+                    • Intuitive navigation<br>
+                    • Mobile-optimized design
+                </p>
+                <div class="cta-buttons">
+                    <a href="https://smiletty.github.io/SMiletty.io-birdmonthly/" target="_blank" class="cta-btn btn-primary">Visit Live Website</a>
+                    <a href="cases.html" class="cta-btn btn-secondary">Back to Cases</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 My Portfolio. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -6,8 +6,13 @@
     <title>About Me - My Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <style>
-
-      
+        .about-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+            margin-bottom: 3rem;
+        }
 
         .headshot-container {
             display: flex;
@@ -23,14 +28,6 @@
             box-shadow: 0 14px 30px rgba(0, 0, 0, 0.3);
             object-fit: cover;
             display: block;
-        }
-        
-        .about-section {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 3rem;
-            align-items: center;
-            margin-bottom: 3rem;
         }
 
         .bio-content h2 {
@@ -48,8 +45,9 @@
         }
 
         .education-section {
-            margin-top: 3rem;
-            padding: 2rem;
+            margin: 3rem auto 0;
+            max-width: 900px;
+            padding: 1.5rem;
             border-radius: 18px;
             background: rgba(255, 255, 255, 0.08);
             border: 1px solid rgba(255, 255, 255, 0.15);
@@ -126,6 +124,45 @@
             font-size: 0.95rem;
         }
 
+        .contact-card {
+            margin: 1.5rem auto 2rem;
+            max-width: 420px;
+            padding: 1rem;
+            border-radius: 14px;
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            text-align: center;
+        }
+
+        .contact-card h3 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+            color: #bbd7ff;
+        }
+
+        .contact-card p {
+            color: #d6e0ff;
+            margin-bottom: 0.75rem;
+            font-size: 0.95rem;
+        }
+
+        .contact-link {
+            display: inline-block;
+            padding: 0.5rem 0.9rem;
+            border-radius: 10px;
+            background: rgba(84, 146, 255, 0.9);
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: background 0.25s ease;
+        }
+
+        .contact-link:hover {
+            background: rgba(113, 171, 255, 0.95);
+        }
+
         @media (max-width: 900px) {
             .about-section {
                 grid-template-columns: 1fr;
@@ -163,63 +200,13 @@
             .education-section {
                 padding: 1.5rem;
             }
-
-            .contact {
-    width: 90%;
-    margin: 80px auto;
-    display: flex;
-    justify-content: center;
-}
-
-.contact-card {
-    text-align: center;
-    padding: 40px;
-    border-radius: 16px;
-    background: rgba(255,255,255,0.05);
-    backdrop-filter: blur(10px);
-    max-width: 400px;
-    width: 100%;
-    transition: 0.3s;
-}
-
-/* subtle hover lift */
-.contact-card:hover {
-    transform: translateY(-6px);
-}
-
-/* text */
-.contact-card h3 {
-    margin-bottom: 10px;
-}
-
-.contact-card p {
-    color: #94a3b8;
-    margin-bottom: 20px;
-}
-
-/* button */
-.contact-btn {
-    display: inline-block;
-    padding: 12px 24px;
-    border: 1px solid #38bdf8;
-    color: #38bdf8;
-    text-decoration: none;
-    border-radius: 8px;
-    transition: 0.3s;
-}
-
-/* hover effect */
-.contact-btn:hover {
-    background: #38bdf8;
-    color: #000;
-}
         }
     </style>
 </head>
 <body>
     <nav class="navbar">
         <div class="nav-container">
-            <h1 class="logo">Portfolio</h1>
+            <h1 class="logo">Shauna Miletty</h1>
             <ul class="nav-menu">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="cases.html">Cases</a></li>
@@ -233,23 +220,12 @@
         <p>My background, experience, and expertise</p>
     </section>
 
-
-
-            <div class="bio-content">
-
-                <section class="contact">
     <div class="contact-card">
-        <h3>Get In Touch</h3>
-        <p>Have a project or question?</p>
-
-        <a href="mailto:milettys445@gmail.com" class="contact-btn">
-            Email Me
-        </a>
+        <h3>Contact Me</h3>
+        <p>I'd love to hear from you about projects, collaborations, or new opportunities.</p>
+        <p>Email me anytime.</p>
+        <a class="contact-link" href="mailto:milettys445@gmail.com">milettys445@gmail.com</a>
     </div>
-</section>
-       
-            </div>
-        </div>
 
         <div class="education-section">
             <h3>Education & Experience</h3>
@@ -259,38 +235,21 @@
                 <div class="school">Sales Specialist</div>
                 <div class="year">2013 - 2025</div>
                 <p>
-                   A Home Improvement Sales Specialist focused on flooring, kitchen cabinets, and doors combines product expertise, design skills, and customer service to guide clients through renovation projects from concept to completion.
-
-In this role, the specialist consults with customers to understand their needs, style preferences, budget, and functional requirements. They recommend appropriate flooring materials (such as hardwood, laminate, tile, or vinyl), kitchen cabinetry solutions, and interior or exterior door options, explaining the benefits, durability, and maintenance of each product.
-
-Using design software like 20/20 AutoCAD and door configurator tools, they create detailed layouts and visual renderings that help customers visualize their spaces. This includes drafting kitchen cabinet arrangements, optimizing space for functionality, and customizing door styles, finishes, and dimensions. Accuracy in measurements and technical specifications is essential to ensure proper ordering and installation.
-
-The specialist is also responsible for generating quotes, processing orders, and coordinating with vendors, installers, and contractors. They may conduct site visits or review measurements to ensure project feasibility. Strong communication and sales skills are key, as they build relationships, close sales, and provide ongoing support throughout the project lifecycle.
-
-Overall, this position blends sales, interior design, and technical drafting, requiring attention to detail, product knowledge, and the ability to turn customer ideas into practical, visually appealing home improvement solutions.
+                    Specialized in customer service and sales, consistently exceeding targets and building strong client relationships. Developed excellent communication, problem-solving, and interpersonal skills through years of experience in a fast-paced retail environment. Using programs such as 20/20 and paradigm to showcase products and create visually appealing displays. This experience has honed my ability to understand customer needs and deliver exceptional service, which I now bring to my work in web development and design.
                 </p>
             </div>
 
             <div class="education-item">
-                <h4>Associate of Computer Science</h4>
+                <h4>Associate of Science in Computer Science UI/UX Design</h4>
                 <div class="school">Fayetteville Technical Community College</div>
                 <div class="year">Graduated 2026</div>
                 <p>
-                    Completed comprehensive coursework in software development, web technologies, database 
-                    management, and computer networks. Developed strong foundation in programming principles 
+                    Completed comprehensive coursework in software development, web technologies, database
+                    management, and computer networks. Developed strong foundation in programming principles
                     and software architecture.
                 </p>
             </div>
 
-            <div class="education-item">
-                <h4>Web Development Certification</h4>
-                <div class="school">Professional Development Institute</div>
-                <div class="year">Completed 2021</div>
-                <p>
-                   Spent 2 years learning how to design intuitive and engaging interfaces for websites, mobile apps, and digital products by focusing on both User Interface (UI) the look and feel—and User Experience (UX) how users interact with and navigate a product. Coursework typically covers topics such as wireframing, prototyping, visual design, typography, color theory, and responsive design.
-
-This program also emphasizes research and problem-solving skills. Students are trained to conduct user research, create personas, map user journeys, and perform usability testing to ensure designs meet real user needs. Tools commonly taught include Figma, Adobe XD, basic coding in HTML, CSS, and JavaScript to better understand how designs are implemented.
-                </p>
             </div>
 
             <div class="skills-section">
@@ -298,15 +257,14 @@ This program also emphasizes research and problem-solving skills. Students are t
                 <div class="skills-grid">
                     <div class="skill-tag">HTML5</div>
                     <div class="skill-tag">CSS3</div>
-                    <div class="skill-tag">Adobe</div>
                     <div class="skill-tag">React</div>
                     <div class="skill-tag">UI/UX Design</div>
                     <div class="skill-tag">Responsive Design</div>
                     <div class="skill-tag">Web Development</div>
-                    <div class="skill-tag">Git</div>
                 </div>
             </div>
         </div>
+
     </main>
 
     <footer>

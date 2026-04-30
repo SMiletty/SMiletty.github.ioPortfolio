@@ -49,9 +49,10 @@
             max-width: 900px;
             padding: 1.5rem;
             border-radius: 18px;
-            background: rgba(255, 255, 255, 0.08);
-            border: 1px solid rgba(255, 255, 255, 0.15);
+            background: linear-gradient(145deg, #163055 0%, #1d4b82 100%);
+            border: 1px solid rgba(147, 197, 253, 0.35);
             backdrop-filter: blur(10px);
+            box-shadow: 0 12px 28px rgba(15, 23, 42, 0.14);
         }
 
         .education-section h3 {
@@ -129,10 +130,11 @@
             max-width: 420px;
             padding: 1rem;
             border-radius: 14px;
-            background: rgba(255, 255, 255, 0.08);
-            border: 1px solid rgba(255, 255, 255, 0.15);
+            background: linear-gradient(145deg, #163055 0%, #1d4b82 100%);
+            border: 1px solid rgba(147, 197, 253, 0.35);
             backdrop-filter: blur(10px);
             text-align: center;
+            box-shadow: 0 12px 28px rgba(15, 23, 42, 0.14);
         }
 
         .contact-card h3 {
@@ -156,11 +158,13 @@
             text-decoration: none;
             font-weight: 600;
             font-size: 0.9rem;
-            transition: background 0.25s ease;
+            transition: background 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
         }
 
         .contact-link:hover {
             background: rgba(113, 171, 255, 0.95);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(37, 99, 235, 0.25);
         }
 
         @media (max-width: 900px) {
@@ -223,8 +227,10 @@
     <div class="contact-card">
         <h3>Contact Me</h3>
         <p>I'd love to hear from you about projects, collaborations, or new opportunities.</p>
-        <p>Email me anytime.</p>
-        <a class="contact-link" href="mailto:milettys445@gmail.com">milettys445@gmail.com</a>
+        <p>Email me anytime or download my resume.</p>
+        <a class="contact-link" href="mailto:milettys445@gmail.com">Email Me</a>
+        <a href="/images/jpgresume.jpg" download="milettyresume.jpg" attributes button class="contact-link" style="margin-left: 0.75rem;">Download Resume</a>
+</a>
     </div>
 
         <div class="education-section">

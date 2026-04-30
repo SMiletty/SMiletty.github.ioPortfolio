@@ -1,4 +1,4 @@
- {
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -60,13 +60,35 @@ body {
     padding: 2rem 1rem 3rem;
 }
 
+
+.back-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0; /* Places video behind overlay and content but above the hero background */
+  object-fit: cover; /* Ensures video covers area without stretching */
+}
+
+/* Optional: Add an overlay to improve text readability */
+.content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4); /* Dark overlay */
+  z-index: 2;
+}
+
 .hero {
     width: 100%;
     min-height: 320px;
     margin: 0;
     padding: 3rem 0;
     border-radius: 0;
-    background-image: url('star.png');
+    background-image: url('image/star.png');
     background-size: cover;
     background-position: center;
     position: relative;
@@ -89,6 +111,7 @@ body {
     position: absolute;
     inset: 0;
     background: linear-gradient(130deg, rgba(4, 17, 39, 0.65), rgba(2, 12, 27, 0.75));
+    z-index: 1;
 }
 
 .hero h2,
@@ -197,4 +220,4 @@ footer {
     .hero {
         height: 240px;
     }
-}
+} 
